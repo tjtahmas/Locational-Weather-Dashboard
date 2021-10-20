@@ -1,0 +1,27 @@
+.btn {
+    margin:10px;
+    padding:10px;
+}
+.navbar {
+    padding:10px;
+    margin-bottom:20px;
+    background-color: #11006e;
+}
+
+.current{
+    padding:10px;
+}
+
+.searchButton{
+    background-color: lightblue;
+}
+
+.searchBar{
+    margin:5px;
+    border-bottom: 2px, solid, gray;
+}
+
+.cityName{
+    display: block;
+}
+
