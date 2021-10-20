@@ -3,7 +3,7 @@
 //        got information to display, got input from searchbar, add recent search buttons, added to local storage
 // 10/19: Added moment.js to give current day and future dates. Fixed CSS styling
 
-//TODO: Add UV Index if statement. Fix persisting Icons problem
+//TODO: Add UV Index if statement. Fix persisting Icons problem. Add README
 
 var city = '';
 var cityNames;
