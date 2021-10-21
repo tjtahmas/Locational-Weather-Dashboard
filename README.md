@@ -1,11 +1,12 @@
-# 06 Server-Side APIs: Weather Dashboard
+# HW-06: Weather Dashboard
 
-## Your Task
+## About This Project
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+This project was an excercise in using an online API to retrieve and display data. 
 
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+The website is a Weather Dashbaord that utilizes openweathermap.org API. The user's inputted location is fed into the Open Weather Map API and returns the current weather and a 5-day forecast of that location. The first API fetch call utilizes the user's inputted city name and returns the longitutde and lattitude of the city, as well as current weather data. This initial API call did not return sufficient information, such as the UV Index or daily forecast. Therefore, a second API call using the longitutde and lattitude is used to return the complete weather data to be utilized. Finally, the appropriate values inside the object returned from the API were assigned to the proper elements to be displayed to the user. 
 
+The layout of this website utlized Bootstrap's row and column grid system. The dates for the current weather and 5-day forecast were created using moment.js's today() function and formatting. 
 ## User Story
 
 ```
@@ -30,61 +31,21 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
-## Mock-Up
+## How To Use
 
-The following image shows the web application's appearance and functionality:
+![Website Wireframe](./images/WebsiteWireframe.png)
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
 
-## Grading Requirements
+To use the Weather Dashboard first input your city's name into the search bar on the lefthand side. The website will then call on the Open Weather Map API to return the lattitude and longitude of the inputted city, which will then be used for a second API to return the current weather and 5-day forecast. This information is displayed on the webpage, with current weather in a larger central box and the 5-day forecast below it. Recent searches are saved below the search bar, and those buttons can be pushed to return the weather of that city. The recently searched cities are stored to local storage and persist upon the page being refreshed. 
 
-This homework is graded based on the following criteria: 
+## Access
 
-### Technical Acceptance Criteria: 40%
+The Weather Dashboard can be accessed at https://tjtahmas.github.io/Locational-Weather-Dashboard/
 
-* Satisfies all of the above acceptance criteria plus the following:
+The GitHub repository for this project is available at https://github.com/tjtahmas/Locational-Weather-Dashboard
+## License
 
-    * Uses the OpenWeather API to retrieve weather data.
+This project was created as part of The Ohio State University Coding Boot Camp
 
-    * Uses `localStorage` to store persistent data.
 
-### Deployment: 32%
 
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
