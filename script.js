@@ -3,7 +3,7 @@
 //        got information to display, got input from searchbar, add recent search buttons, added to local storage
 // 10/19: Added moment.js to give current day and future dates. Fixed CSS styling
 
-//TODO: Fix CSS to display UV Index colors.  Add Screenshot to Readme
+//TODO: Add Screenshot to Readme
 
 var city = '';
 //console.log(localStorage.getItem('cityNames'))
@@ -146,16 +146,16 @@ function updateCity(city) {
                         current.children[6].textContent = 'Humidity: ' + humidity + ' %';
                         current.children[8].textContent = 'UV Index: ' + uvIndex;
                         if (uvIndex <= 2) {
-                            current.children[8].style.backgroundcolor = 'green';
+                            current.children[8].style.color = 'green';
                             console.log('GREEN')
                         } else if (uvIndex > 2 && uvIndex <= 5) {
-                            current.children[8].style.backgroundcolor = 'yellow';
+                            current.children[8].style.color = 'yellow';
                             console.log('YELLOW')
                         } else if (uvIndex > 5 && uvIndex <= 7) {
-                            current.children[8].style.backgroundcolor = 'orange';
+                            current.children[8].style.color = 'orange';
                             console.log('ORANGE')
                         } else if (uvIndex > 7 && uvIndex <= 10) {
-                            current.children[8].style.backgroundcolor = 'green';
+                            current.children[8].style.color = 'red';
                         }
                     }
                 

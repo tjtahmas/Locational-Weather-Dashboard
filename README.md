@@ -33,7 +33,7 @@ THEN I am again presented with current and future conditions for that city
 
 ## How To Use
 
-![Website Wireframe](./images/WebsiteWireframe.png)
+![Weather Dashboard Screenshot](./Assets/screenshot.png)
 
 
 To use the Weather Dashboard first input your city's name into the search bar on the lefthand side. The website will then call on the Open Weather Map API to return the lattitude and longitude of the inputted city, which will then be used for a second API to return the current weather and 5-day forecast. This information is displayed on the webpage, with current weather in a larger central box and the 5-day forecast below it. Recent searches are saved below the search bar, and those buttons can be pushed to return the weather of that city. The recently searched cities are stored to local storage and persist upon the page being refreshed. 
